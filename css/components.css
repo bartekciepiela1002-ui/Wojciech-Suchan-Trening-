@@ -252,6 +252,11 @@
   max-width: 420px;
 }
 
+.hero__cta {
+  width: fit-content;
+  align-self: center;
+}
+
 .hero__photo-holder {
   aspect-ratio: 3 / 4;
   max-height: 70vh;
