@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt — Wojciech Suchan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+
+      <a href="index.html" class="nav__logo">Wojciech Suchan</a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Nawigacja główna">
+        <a href="o-mnie.html" class="nav__link">O mnie</a>
+        <a href="przemiany.html" class="nav__link">Przemiany</a>
+        <a href="oferta.html" class="nav__link">Oferta</a>
+        <a href="kontakt.html" class="nav__link">Kontakt</a>
+      </nav>
+
+      <a href="oferta.html" class="btn btn--primary nav__cta">Rozpocznij wyzwanie</a>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="page-hero section">
+      <div class="container">
+        <div class="page-hero__content" style="max-width: 580px;">
+          <p class="section-label">Kontakt</p>
+          <h1 class="page-hero__title">Napisz<br>do mnie.</h1>
+          <p class="page-hero__lead">
+            Masz pytania przed zakupem? Chcesz wiedzieć który pakiet
+            będzie dla Ciebie najlepszy? Napisz — odpiszę szybko.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formularz + dane -->
+    <section class="contact section section--surface">
+      <div class="container contact__inner">
+
+        <!-- Formularz -->
+        <div class="contact__form-wrap">
+          <form class="contact-form" id="contactForm" novalidate>
+
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="name">Imię</label>
+              <input
+                class="contact-form__input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Jak mam się do Ciebie zwracać?"
+                autocomplete="given-name"
+                required
+              >
+              <span class="contact-form__error" id="nameError">Podaj swoje imię</span>
+            </div>
+
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="email">E-mail</label>
+              <input
+                class="contact-form__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="twoj@email.pl"
+                autocomplete="email"
+                required
+              >
+              <span class="contact-form__error" id="emailError">Podaj poprawny adres e-mail</span>
+            </div>
+
+            <div class="contact-form__field">
+              <label class="contact-form__label" for="message">Wiadomość</label>
+              <textarea
+                class="contact-form__input contact-form__textarea"
+                id="message"
+                name="message"
+                placeholder="O co chodzi? Chętnie pomogę wybrać odpowiedni pakiet..."
+                rows="5"
+                required
+              ></textarea>
+              <span class="contact-form__error" id="messageError">Napisz wiadomość</span>
+            </div>
+
+            <button type="submit" class="btn btn--primary contact-form__submit">
+              Wyślij wiadomość
+            </button>
+
+            <p class="contact-form__note">
+              Zazwyczaj odpisuję w ciągu kilku godzin.
+            </p>
+
+            <!-- Success message -->
+            <div class="contact-form__success" id="formSuccess" aria-live="polite">
+              ✅ Wiadomość wysłana! Odezwę się wkrótce.
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Dane kontaktowe -->
+        <div class="contact__info">
+
+          <div class="contact-info-block">
+            <p class="section-label">Social media</p>
+            <div class="contact-info-block__links">
+              <a href="#" class="contact-social-link" aria-label="Instagram Wojciecha Suchana">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                <span>Instagram</span>
+              </a>
+              <a href="https://www.facebook.com/wojtekk.suchan/" class="contact-social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook Wojciecha Suchana">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+                <span>Facebook</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-info-block">
+            <p class="section-label">Lokalizacja</p>
+            <p class="contact-info-block__text">
+              Trening stacjonarny dostępny w <strong>Nysie</strong>.<br>
+              Współpraca online — cała Polska.
+            </p>
+          </div>
+
+          <div class="contact-info-block">
+            <p class="section-label">Czas odpowiedzi</p>
+            <p class="contact-info-block__text">
+              Odpisuję zazwyczaj tego samego dnia.<br>
+              Najszybciej przez Instagram i Facebook.
+            </p>
+          </div>
+
+          <div class="contact-info-block contact-info-block--cta">
+            <p class="contact-info-block__text">
+              Wolisz od razu przejść do oferty?
+            </p>
+            <a href="oferta.html" class="btn btn--outline">
+              Zobacz pakiety
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">Wojciech Suchan</a>
+        <p class="footer__tagline">Trener personalny · Psychodietetyk · Nysa</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Nawigacja stopki">
+        <a href="o-mnie.html" class="footer__link">O mnie</a>
+        <a href="przemiany.html" class="footer__link">Przemiany</a>
+        <a href="oferta.html" class="footer__link">Oferta</a>
+        <a href="kontakt.html" class="footer__link">Kontakt</a>
+      </nav>
+
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">© 2024 Wojciech Suchan. Wszelkie prawa zastrzeżone.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Regulamin</a>
+          <a href="#" class="footer__legal-link">Polityka prywatności</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

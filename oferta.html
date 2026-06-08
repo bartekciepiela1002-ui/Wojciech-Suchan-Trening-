@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferta — Wojciech Suchan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+
+      <a href="index.html" class="nav__logo">Wojciech Suchan</a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Nawigacja główna">
+        <a href="o-mnie.html" class="nav__link">O mnie</a>
+        <a href="przemiany.html" class="nav__link">Przemiany</a>
+        <a href="oferta.html" class="nav__link">Oferta</a>
+        <a href="kontakt.html" class="nav__link">Kontakt</a>
+      </nav>
+
+      <a href="oferta.html" class="btn btn--primary nav__cta">Rozpocznij wyzwanie</a>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="page-hero section">
+      <div class="container">
+        <div class="page-hero__content" style="max-width: 580px;">
+          <p class="section-label">Oferta</p>
+          <h1 class="page-hero__title">Wybierz swój<br>pakiet.</h1>
+          <p class="page-hero__lead">
+            Wszystkie pakiety zawierają indywidualny plan i stały kontakt ze mną.
+            Żadnych szablonów, żadnego kopiuj-wklej.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pakiety -->
+    <section class="pricing section section--surface" id="pakiety">
+      <div class="container">
+
+        <div class="pricing__grid pricing__grid--3col">
+
+          <!-- Pakiet 1 miesiąc -->
+          <div class="pricing-card">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Współpraca Online<br>1 miesiąc</h3>
+              <p class="pricing-card__desc">
+                Idealny start — miesięczna współpraca z indywidualnym
+                planem i stałym kontaktem. Dla osób które chcą spróbować
+                i zobaczyć pierwsze efekty.
+              </p>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">449 zł</span>
+              <span class="pricing-card__period">/ miesiąc</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Indywidualny plan treningowy</li>
+              <li>Plan żywieniowy dopasowany do Ciebie</li>
+              <li>Stały kontakt przez 4 tygodnie</li>
+              <li>Korekty planu w razie potrzeby</li>
+              <li>Wsparcie psychodietetyczne</li>
+            </ul>
+            <div class="pricing-card__actions">
+              <a href="#" class="btn btn--outline pricing-card__btn" data-pakiet="1msc">
+                Kup przez Przelewy24
+              </a>
+              <a href="#" class="btn btn--paypal pricing-card__btn" data-pakiet="1msc">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.59 3.025-2.566 6.082-8.558 6.082H9.824l-1.175 7.396h3.228c.524 0 .968-.382 1.05-.9l.899-5.678h2.191c4.298 0 6.516-2.073 7.205-6.613z"/>
+                </svg>
+                Kup przez PayPal
+              </a>
+            </div>
+            <p class="pricing-card__paypo">
+              💳 Kup teraz, zapłać za 30 dni — dostępne PayPo
+            </p>
+          </div>
+
+          <!-- Pakiet 3 miesiące — wyróżniony -->
+          <div class="pricing-card pricing-card--featured">
+            <div class="pricing-card__badge">Najpopularniejszy</div>
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Noworoczne Wyzwanie<br>efekt w 12 tyg.</h3>
+              <p class="pricing-card__desc">
+                Trzy miesiące intensywnej współpracy — zobaczysz realną zmianę
+                sylwetki i wypracujesz nawyki które zostają na zawsze.
+              </p>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">799 zł</span>
+              <span class="pricing-card__period">/ 3 miesiące</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Indywidualny plan treningowy</li>
+              <li>Plan żywieniowy dopasowany do Ciebie</li>
+              <li>Konsultacja psychodietetyczna</li>
+              <li>Stały kontakt przez 12 tygodni</li>
+              <li>Cotygodniowe korekty planu</li>
+              <li>Analiza postępów co miesiąc</li>
+              <li>Wsparcie motywacyjne</li>
+            </ul>
+            <div class="pricing-card__actions">
+              <a href="#" class="btn btn--primary pricing-card__btn" data-pakiet="3msc">
+                Kup przez Przelewy24
+              </a>
+              <a href="#" class="btn btn--paypal pricing-card__btn" data-pakiet="3msc">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.59 3.025-2.566 6.082-8.558 6.082H9.824l-1.175 7.396h3.228c.524 0 .968-.382 1.05-.9l.899-5.678h2.191c4.298 0 6.516-2.073 7.205-6.613z"/>
+                </svg>
+                Kup przez PayPal
+              </a>
+            </div>
+            <p class="pricing-card__paypo">
+              💳 Kup teraz, zapłać za 30 dni — dostępne PayPo
+            </p>
+          </div>
+
+          <!-- Pakiet 6 miesięcy -->
+          <div class="pricing-card pricing-card--pro">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Współpraca Online<br>6 miesięcy</h3>
+              <p class="pricing-card__desc">
+                Pół roku pełnej współpracy — dla osób które chcą kompleksowej
+                i trwałej zmiany sylwetki, podejścia do jedzenia i stylu życia.
+              </p>
+            </div>
+            <div class="pricing-card__price">
+              <span class="pricing-card__amount">1399 zł</span>
+              <span class="pricing-card__period">/ 6 miesięcy</span>
+            </div>
+            <ul class="pricing-card__features">
+              <li>Zaawansowany plan treningowy z periodyzacją</li>
+              <li>Plan żywieniowy z pełną personalizacją</li>
+              <li>Konsultacje psychodietetyczne</li>
+              <li>Stały kontakt przez 6 miesięcy</li>
+              <li>Cotygodniowe korekty i analiza postępów</li>
+              <li>Planowanie suplementacji</li>
+              <li>Priorytetowy kontakt ze mną</li>
+              <li>Podsumowanie i plan na dalej po zakończeniu</li>
+            </ul>
+            <div class="pricing-card__actions">
+              <a href="#" class="btn btn--primary pricing-card__btn" data-pakiet="6msc">
+                Kup przez Przelewy24
+              </a>
+              <a href="#" class="btn btn--paypal pricing-card__btn" data-pakiet="6msc">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944.901C5.026.382 5.474 0 5.998 0h7.46c2.57 0 4.578.543 5.69 1.81 1.01 1.15 1.304 2.42 1.012 4.287-.023.143-.047.288-.077.437-.983 5.05-4.349 6.797-8.647 6.797h-2.19c-.524 0-.968.382-1.05.9l-1.12 7.106zm14.146-14.42a3.35 3.35 0 0 0-.607-.541c-.013.076-.026.175-.041.254-.59 3.025-2.566 6.082-8.558 6.082H9.824l-1.175 7.396h3.228c.524 0 .968-.382 1.05-.9l.899-5.678h2.191c4.298 0 6.516-2.073 7.205-6.613z"/>
+                </svg>
+                Kup przez PayPal
+              </a>
+            </div>
+            <p class="pricing-card__paypo">
+              💳 Kup teraz, zapłać za 30 dni — dostępne PayPo
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ zakupowe -->
+    <section class="faq section section--surface">
+      <div class="container faq__inner">
+
+        <div class="faq__header">
+          <p class="section-label">FAQ</p>
+          <h2 class="faq__title">Często pytacie.</h2>
+        </div>
+
+        <div class="faq__list">
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              Co dokładnie dostaję po zakupie?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Po zakupie kontaktuję się z Tobą w ciągu 24 godzin. Przeprowadzamy krótki wywiad — pytam o Twój cel, tryb życia, preferencje żywieniowe i ewentualne ograniczenia. Na tej podstawie przygotowuję indywidualny plan treningowy i żywieniowy, który dostajesz w wygodnym formacie.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              Czy mogę ćwiczyć w domu bez sprzętu?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Tak. Plan układam pod Twoje warunki — dom, siłownia, park. Mówisz mi co masz do dyspozycji i dostosuję trening do tego. Nie potrzebujesz sprzętu żeby zacząć osiągać efekty.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              Czy płatność jest bezpieczna?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Płatności obsługuje Przelewy24 i PayPal — jedne z najbezpieczniejszych systemów płatności w Polsce i na świecie. Twoje dane finansowe nigdy nie trafiają bezpośrednio do mnie.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              Co jeśli coś nie działa lub mam pytania?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Jestem dostępny przez cały czas trwania pakietu. Piszesz — odpisuję. Coś nie gra w planie, boli Cię kolano, zjadłeś pizzę i myślisz że wszystko stracone? Piszesz do mnie i razem to ogarniamy.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              Czym różni się pakiet miesięczny od 3 i 6 miesięcy?
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-item__answer">
+              <p>Pakiet miesięczny to dobry start i sprawdzenie jak wygląda współpraca. Pakiet 3-miesięczny daje czas na realną zmianę sylwetki i wyrobienie nawyków. Pakiet 6-miesięczny to pełna transformacja — ciało, nawyki żywieniowe i głowa. Im dłużej pracujemy razem, tym lepsze i trwalsze efekty.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt ratunkowy -->
+    <section class="page-cta section">
+      <div class="container page-cta__inner">
+        <h2 class="page-cta__title">Masz pytania<br>przed zakupem?</h2>
+        <p class="page-cta__text">
+          Napisz do mnie — odpiszę i pomogę wybrać pakiet który
+          będzie dla Ciebie najlepszy.
+        </p>
+        <div class="page-cta__buttons">
+          <a href="kontakt.html" class="btn btn--primary">Napisz do mnie</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">Wojciech Suchan</a>
+        <p class="footer__tagline">Trener personalny · Psychodietetyk · Nysa</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Nawigacja stopki">
+        <a href="o-mnie.html" class="footer__link">O mnie</a>
+        <a href="przemiany.html" class="footer__link">Przemiany</a>
+        <a href="oferta.html" class="footer__link">Oferta</a>
+        <a href="kontakt.html" class="footer__link">Kontakt</a>
+      </nav>
+
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">© 2024 Wojciech Suchan. Wszelkie prawa zastrzeżone.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Regulamin</a>
+          <a href="#" class="footer__legal-link">Polityka prywatności</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wojciech Suchan — Trener Personalny &amp; Psychodietetyk | Nysa</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+
+      <a href="index.html" class="nav__logo">Wojciech Suchan</a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Nawigacja główna">
+        <a href="o-mnie.html" class="nav__link">O mnie</a>
+        <a href="przemiany.html" class="nav__link">Przemiany</a>
+        <a href="oferta.html" class="nav__link">Oferta</a>
+        <a href="kontakt.html" class="nav__link">Kontakt</a>
+      </nav>
+
+      <a href="oferta.html" class="btn btn--primary nav__cta">Rozpocznij wyzwanie</a>
+
+      <button class="nav__hamburger" id="hamburger" aria-label="Otwórz menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main id="main" style="padding-top: 0;">
+
+    <section class="hero" id="hero">
+
+      <!-- Placeholder wideo w tle -->
+      <div class="hero__video-wrap">
+        <div class="hero__video-placeholder" aria-hidden="true"></div>
+        <!-- Gdy będzie gotowe wideo, zastąp div powyżej tym:
+        <video class="hero__video" autoplay muted loop playsinline>
+          <source src="video/hero.mp4" type="video/mp4">
+        </video>
+        -->
+      </div>
+
+      <!-- Nakładka jasna -->
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <!-- Treść -->
+      <div class="container hero__content hero__content--split">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Trener personalny · Psychodietetyk · Nysa</p>
+          <h1 class="hero__title">Wojciech<br>Suchan</h1>
+          <p class="hero__sub">Pomagam ludziom zacząć — i wytrwać.<br>Bez wyrzeczeń, bez presji, z efektami.</p>
+        </div>
+        <div class="hero__divider" aria-hidden="true"></div>
+        <div class="hero__photo-holder" aria-label="Miejsce na zdjęcie trenera">
+          <div class="hero__photo-holder-inner">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="3"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+            <p class="hero__photo-holder-text">Zdjęcie trenera</p>
+            <span class="hero__photo-holder-sub">Czeka na wypełnienie</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Strzałka scroll down -->
+      <a href="#sciezka" class="hero__scroll" aria-label="Przewiń dalej">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+
+    </section>
+
+    <section class="paths" id="sciezka">
+      <div class="container">
+
+        <p class="paths__label">Gdzie jesteś teraz?</p>
+
+        <div class="paths__grid">
+
+          <a href="oferta.html#podstawowe" class="path-card">
+            <div class="path-card__icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 8 12 12 14 14"></polyline>
+              </svg>
+            </div>
+            <h2 class="path-card__title">Zaczynam<br>od zera</h2>
+            <p class="path-card__desc">Nie wiesz od czego zacząć, boisz się że to nie dla Ciebie, albo próbowałeś już kilka razy bez efektu. Zacznijmy razem — spokojnie i bez presji.</p>
+            <span class="path-card__cta">
+              Pokaż mi pakiety
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </span>
+          </a>
+
+          <a href="oferta.html#zaawansowane" class="path-card path-card--accent">
+            <div class="path-card__icon" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h2 class="path-card__title">Wracam /<br>chcę więcej</h2>
+            <p class="path-card__desc">Trenowałeś już wcześniej, wiesz czego chcesz, ale potrzebujesz kogoś kto wyciągnie z Ciebie maksimum i pomoże przebić sufit.</p>
+            <span class="path-card__cta">
+              Pokaż mi pakiety
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Mini O mnie -->
+    <section class="about-mini section">
+      <div class="container about-mini__inner">
+
+        <!-- Zdjęcie -->
+        <div class="about-mini__photo-wrap">
+          <div class="about-mini__photo-placeholder" aria-label="Zdjęcie Wojciecha Suchana"></div>
+          <!-- Gdy będzie zdjęcie, zastąp div powyżej:
+          <img src="img/wojtek.jpg" alt="Wojciech Suchan — trener personalny i psychodietetyk" class="about-mini__photo" loading="lazy">
+          -->
+        </div>
+
+        <!-- Treść -->
+        <div class="about-mini__content">
+          <p class="section-label">O mnie</p>
+          <h2 class="about-mini__title">Trener, który<br>słucha — nie tylko liczy.</h2>
+          <p class="about-mini__text">
+            Jestem licencjonowanym trenerem personalnym i psychodietetykiem. Pracuję z ludźmi którzy chcą zmienić ciało, ale też odbudować relację z jedzeniem i ruchem. Nie straszę restrykcjami — uświadamiam, motywuję i buduję nawyki które zostają na lata.
+          </p>
+          <div class="about-mini__badge">🏆 Trener Roku 2023 — Nowa Trybuna Opolska</div>
+          <a href="o-mnie.html" class="btn btn--outline">Poznaj mnie bliżej</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pasek liczb -->
+    <section class="stats section--surface">
+      <div class="container stats__grid">
+
+        <div class="stat">
+          <span class="stat__number">7+</span>
+          <span class="stat__label">lat doświadczenia</span>
+        </div>
+
+        <div class="stat">
+          <span class="stat__number">200+</span>
+          <span class="stat__label">zadowolonych klientów</span>
+        </div>
+
+        <div class="stat">
+          <span class="stat__number">online<br>i stacjonarnie</span>
+          <span class="stat__label">Nysa i cała Polska</span>
+        </div>
+
+        <div class="stat">
+          <span class="stat__number">#1</span>
+          <span class="stat__label">Trener Roku 2023 NTO</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Mini Przemiany -->
+    <section class="transforms-mini section">
+      <div class="container">
+
+        <div class="transforms-mini__header">
+          <div>
+            <p class="section-label">Efekty</p>
+            <h2 class="transforms-mini__title">Prawdziwe wyniki,<br>prawdziwi ludzie.</h2>
+          </div>
+          <a href="przemiany.html" class="btn btn--outline">Zobacz wszystkie</a>
+        </div>
+
+        <div class="transforms-mini__grid">
+
+          <div class="transform-card">
+            <div class="transform-card__images">
+              <div class="transform-card__img-placeholder transform-card__img-placeholder--before">
+                <span>Przed</span>
+              </div>
+              <div class="transform-card__img-placeholder transform-card__img-placeholder--after">
+                <span>Po</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="transform-card">
+            <div class="transform-card__images">
+              <div class="transform-card__img-placeholder transform-card__img-placeholder--before">
+                <span>Przed</span>
+              </div>
+              <div class="transform-card__img-placeholder transform-card__img-placeholder--after">
+                <span>Po</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="transform-card">
+            <div class="transform-card__images">
+              <div class="transform-card__img-placeholder transform-card__img-placeholder--before">
+                <span>Przed</span>
+              </div>
+              <div class="transform-card__img-placeholder transform-card__img-placeholder--after">
+                <span>Po</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="transforms-mini__cta">
+          <a href="oferta.html" class="btn btn--primary">Zacznij swoją przemianę</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <a href="index.html" class="footer__logo">Wojciech Suchan</a>
+        <p class="footer__tagline">Trener personalny · Psychodietetyk · Nysa</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Nawigacja stopki">
+        <a href="o-mnie.html" class="footer__link">O mnie</a>
+        <a href="przemiany.html" class="footer__link">Przemiany</a>
+        <a href="oferta.html" class="footer__link">Oferta</a>
+        <a href="kontakt.html" class="footer__link">Kontakt</a>
+      </nav>
+
+      <div class="footer__social">
+        <a href="#" class="footer__social-link" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p class="footer__copy">© 2024 Wojciech Suchan. Wszelkie prawa zastrzeżone.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Regulamin</a>
+          <a href="#" class="footer__legal-link">Polityka prywatności</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
