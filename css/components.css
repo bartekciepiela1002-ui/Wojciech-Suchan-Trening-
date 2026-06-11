@@ -1647,3 +1647,76 @@
     gap: var(--space-lg);
   }
 }
+
+/* ─── Scroll Reveal ─── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger — opóźnienia dla elementów w grupach */
+.reveal[data-delay="1"] { transition-delay: 0.1s; }
+.reveal[data-delay="2"] { transition-delay: 0.2s; }
+.reveal[data-delay="3"] { transition-delay: 0.3s; }
+.reveal[data-delay="4"] { transition-delay: 0.4s; }
+.reveal[data-delay="5"] { transition-delay: 0.5s; }
+
+/* ─── Hover przemian: efekt before/after ─── */
+
+.transform-card__images > div,
+.transform-full-card__img-wrap {
+  transition: filter 0.4s ease, transform 0.4s ease;
+  overflow: hidden;
+}
+
+.transform-card:hover .transform-card__img-placeholder--before,
+.transform-full-card:hover .transform-full-card__img-wrap:first-child .transform-full-card__placeholder {
+  filter: grayscale(0.6) brightness(0.85);
+}
+
+.transform-card:hover .transform-card__img-placeholder--after,
+.transform-full-card:hover .transform-full-card__img-wrap:last-child .transform-full-card__placeholder {
+  transform: scale(1.04);
+}
+
+.transform-card__img-placeholder,
+.transform-full-card__placeholder {
+  transition: filter 0.4s ease, transform 0.4s ease;
+}
+
+/* ─── Strzałka hero: fade przy scrollu ─── */
+
+.hero__scroll {
+  transition: opacity 0.4s ease;
+}
+
+.hero__scroll.is-hidden {
+  opacity: 0 !important;
+  pointer-events: none;
+}
+
+/* ─── Reduced motion ─── */
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .hero__eyebrow,
+  .hero__title,
+  .hero__sub,
+  .hero__scroll {
+    animation: none;
+    opacity: 1;
+  }
+}
